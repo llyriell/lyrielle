@@ -614,6 +614,7 @@ function SlideDeck({ project }: { project: Project }) {
           <img
             src={slide.src}
             alt={`${project.author} — ${project.title}${project.location ? `, ${project.location}` : ''}`}
+            loading={idx < 2 ? 'eager' : 'lazy'}
             className="w-full h-full object-cover object-center"
             draggable={false}
           />
@@ -676,6 +677,7 @@ function SlideDeck({ project }: { project: Project }) {
               <img
                 src={slide.src}
                 alt={`${project.author} — ${project.title}${project.location ? `, ${project.location}` : ''}`}
+                loading="eager"
                 className="max-w-full max-h-full object-contain select-none"
                 style={{
                   transform: `translate(${pan.x}px, ${pan.y}px) scale(${zoom})`,
@@ -752,7 +754,7 @@ function SmallTile({ project, active, onClick, onHover }: { project: Project; ac
       className="relative flex-1 aspect-[4/3] bg-[#EAEAE8] overflow-hidden cursor-pointer focus:outline-none group"
       style={{ outline: active ? '1px solid #4D6844' : 'none', outlineOffset: '2px' }}
     >
-      <img src={cover} alt={`${project.author} — ${project.title}${project.location ? `, ${project.location}` : ''}`} className="w-full h-full object-cover opacity-80 transition-opacity duration-500 group-hover:opacity-100" />
+      <img src={cover} alt={`${project.author} — ${project.title}${project.location ? `, ${project.location}` : ''}`} loading="lazy" className="w-full h-full object-cover opacity-80 transition-opacity duration-500 group-hover:opacity-100" />
       <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/55 to-transparent p-3 pt-8 transition-opacity duration-300" style={{ opacity: hovered ? 1 : 0 }}>
         <p className="text-[10px] text-white/90 font-[300] tracking-wide">{project.location}</p>
       </div>
