@@ -1,0 +1,1 @@
+{"root":["./src/App.tsx","./src/main.tsx","./src/vite-env.d.ts","./src/components/Archive.tsx","./src/components/Hero.tsx","./src/components/Navigation.tsx","./src/components/Practice.tsx","./src/components/Typewriter.tsx","./src/components/WorkGallery.tsx","./src/data/essay.ts","./src/data/fieldNotes.ts","./src/hooks/useInView.ts"],"version":"5.9.3"}

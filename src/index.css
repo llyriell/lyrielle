@@ -1,0 +1,275 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; }
+  body {
+    font-family: 'Inter', system-ui, sans-serif;
+    background-color: #F9F9F7;
+    color: #111111;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+@layer utilities {
+  .img-zoom img { transition: transform 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94); }
+  .img-zoom:hover img { transform: scale(1.04); }
+  .scanlines {
+    background-image: repeating-linear-gradient(0deg,
+      rgba(17,17,17,0.025) 0px, rgba(17,17,17,0.025) 1px,
+      transparent 1px, transparent 3px);
+  }
+  .sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+  }
+}
+
+/* ---- CRT de-rez transition ---- */
+@keyframes crt-derez {
+  0%   { transform: scale(1, 1);    filter: brightness(1);  opacity: 1; }
+  10%  { transform: scale(1.02, 0.98); filter: brightness(1.4); opacity: 0.9; }
+  20%  { transform: scale(1.04, 0.96); filter: brightness(0.6); opacity: 0.7; }
+  35%  { transform: scale(0.98, 1.02); filter: brightness(1.8); opacity: 0.85; }
+  50%  { transform: scale(1.06, 0.94); filter: brightness(0.3); opacity: 0.4; }
+  65%  { transform: scale(0.96, 1.04); filter: brightness(1.6); opacity: 0.6; }
+  78%  { transform: scale(1.02, 0.98); filter: brightness(0.5); opacity: 0.25; }
+  90%  { transform: scale(1.01, 0.99); filter: brightness(1.2); opacity: 0.1; }
+  100% { transform: scale(1, 1);    filter: brightness(1);  opacity: 0; }
+}
+.crt-derez { animation: crt-derez 0.9s cubic-bezier(0.3, 0, 0.4, 1) forwards; }
+
+/* ---- CRT startup: bloom in from a horizontal line ---- */
+@keyframes crt-startup {
+  0%   { transform: scale(1, 0.004); opacity: 0; filter: brightness(2.5); }
+  20%  { transform: scale(1, 0.02);  opacity: 0.6; filter: brightness(2); }
+  50%  { transform: scale(1, 0.4);   opacity: 0.9; filter: brightness(1.4); }
+  100% { transform: scale(1, 1);     opacity: 1; filter: brightness(1); }
+}
+.crt-startup { animation: crt-startup 0.7s cubic-bezier(0.2, 0.7, 0.3, 1) forwards; transform-origin: center; }
+
+/* ---- CRT shutdown: vertical squeeze to a line, then fade (no horizontal jitter) ---- */
+@keyframes crt-shutdown {
+  0%   { transform: scale(1, 1);      opacity: 1; filter: brightness(1); }
+  45%  { transform: scale(1, 0.02);   opacity: 1; filter: brightness(1.4); }
+  70%  { transform: scale(1, 0.02);   opacity: 0.5; filter: brightness(2); }
+  100% { transform: scale(1, 0.02);   opacity: 0; filter: brightness(0); }
+}
+.crt-shutdown { animation: crt-shutdown 0.7s cubic-bezier(0.5, 0, 0.7, 1) forwards; transform-origin: center; }
+.crt-shutdown-slow { animation: crt-shutdown 1.2s cubic-bezier(0.5, 0, 0.7, 1) forwards; transform-origin: center; }
+
+/* ---- thinking dots: staggered soft pulse ---- */
+@keyframes thinking-dot {
+  0%, 80%, 100% { opacity: 0.2; }
+  40%           { opacity: 0.9; }
+}
+
+@keyframes crt-unlock-fade {
+  0%   { opacity: 0; transform: translateY(8px); filter: blur(6px); }
+  100% { opacity: 1; transform: translateY(0);   filter: blur(0); }
+}
+.crt-unlock-fade { animation: crt-unlock-fade 0.7s ease-out forwards; }
+
+/* ---- Archive locked-state full-bleed overlay ---- */
+.archive-veil {
+  background:
+    repeating-linear-gradient(0deg,
+      rgba(17,17,17,0.05) 0px, rgba(17,17,17,0.05) 1px,
+      transparent 1px, transparent 4px),
+    radial-gradient(ellipse at center, rgba(249,249,247,0.4) 0%, rgba(249,249,247,0.92) 70%, rgba(249,249,247,0.98) 100%);
+}
+.archive-veil-bars {
+  background-image: repeating-linear-gradient(0deg,
+    rgba(77,104,68,0.08) 0px, rgba(77,104,68,0.08) 1px,
+    transparent 1px, transparent 28px);
+}
+
+/* ---- chat bubble bump-in ---- */
+@keyframes chat-bump {
+  0%   { opacity: 0; transform: translateY(10px) scale(0.98); }
+  100% { opacity: 1; transform: translateY(0)   scale(1); }
+}
+.chat-bump { animation: chat-bump 0.5s cubic-bezier(0.2, 0.8, 0.3, 1) forwards; opacity: 0; }
+
+/* ---- soft pulse for hover-thought ---- */
+@keyframes thought-pulse {
+  0%, 100% { opacity: 0.35; }
+  50%      { opacity: 0.7; }
+}
+.thought-pulse { animation: thought-pulse 2.4s ease-in-out infinite; }
+
+/* ---- typewriter caret ---- */
+@keyframes caret-blink {
+  0%, 49% { opacity: 1; }
+  50%, 100% { opacity: 0; }
+}
+.caret-blink { animation: caret-blink 1s step-end infinite; }
+
+/* ---- heartbeat: slow tide — single swell, 6s cycle ---- */
+@keyframes heartbeat {
+  0%     { opacity: 0.3; }
+  45%    { opacity: 0.85; }
+  55%    { opacity: 0.85; }
+  100%   { opacity: 0.3; }
+}
+.heartbeat-pulse { animation: heartbeat 6s ease-in-out infinite; }
+
+/* ---- wave sweep: left-to-right from LE, one pass, matches LE darkness (#111) ---- */
+@keyframes wave-sweep {
+  0%   { background-position: 200% center; }
+  100% { background-position: -100% center; }
+}
+.wave-active {
+  background: linear-gradient(
+    90deg,
+    #B8B8B4 0%,
+    #B8B8B4 30%,
+    #111111 46%,
+    #111111 54%,
+    #B8B8B4 70%,
+    #B8B8B4 100%
+  );
+  background-size: 300% 100%;
+  background-position: 200% center;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: wave-sweep 2.6s ease-in-out forwards;
+}
+
+/* ---- pixel glitch: tight fragmentation, minimal displacement, fast ---- */
+/* Used for Le→Todd transition and Todd glitch-in */
+@keyframes pixel-frag {
+  0%   { clip-path: inset(0 0 0 0);     transform: translateX(0); }
+  10%  { clip-path: inset(0 0 85% 0);   transform: translateX(1px); }
+  20%  { clip-path: inset(40% 0 30% 0); transform: translateX(-1px); }
+  30%  { clip-path: inset(70% 0 0% 0);  transform: translateX(1px); }
+  40%  { clip-path: inset(10% 0 60% 0); transform: translateX(-1px); }
+  50%  { clip-path: inset(50% 0 20% 0); transform: translateX(1px); }
+  60%  { clip-path: inset(0 0 45% 0);   transform: translateX(-1px); }
+  70%  { clip-path: inset(60% 0 5% 0);  transform: translateX(1px); }
+  80%  { clip-path: inset(25% 0 50% 0); transform: translateX(-1px); }
+  90%  { clip-path: inset(0 0 0 0);     transform: translateX(0); }
+  100% { clip-path: inset(0 0 0 0);     transform: translateX(0); }
+}
+.pixel-frag {
+  display: inline-block;
+  animation: pixel-frag 0.25s steps(1) forwards;
+}
+
+/* ---- full name glitch-out: tight, fast, more fragmentation ---- */
+@keyframes full-frag-out {
+  0%   { clip-path: inset(0 0 0 0);     transform: translateX(0);    opacity: 1; }
+  12%  { clip-path: inset(0 0 80% 0);   transform: translateX(1px);  opacity: 0.9; }
+  24%  { clip-path: inset(60% 0 0% 0);  transform: translateX(-1px); opacity: 0.8; }
+  36%  { clip-path: inset(20% 0 50% 0); transform: translateX(1px);  opacity: 0.6; }
+  48%  { clip-path: inset(70% 0 5% 0);  transform: translateX(-1px); opacity: 0.4; }
+  60%  { clip-path: inset(0 0 70% 0);   transform: translateX(1px);  opacity: 0.25; }
+  72%  { clip-path: inset(40% 0 30% 0); transform: translateX(-1px); opacity: 0.12; }
+  85%  { clip-path: inset(0 0 0 0);     transform: translateX(0);    opacity: 0.05; }
+  100% { clip-path: inset(0 0 0 0);     transform: translateX(0);    opacity: 0; }
+}
+.full-frag-out {
+  display: inline-block;
+  animation: full-frag-out 0.35s steps(1) forwards;
+}
+
+/* Reborn — word by word fade-in */
+@keyframes name-reborn-word {
+  0%   { opacity: 0; }
+  100% { opacity: 1; }
+}
+.name-reborn-word {
+  display: inline;
+  opacity: 0;
+  animation: name-reborn-word 0.9s ease-out forwards;
+}
+
+/* LE nav blink-in */
+@keyframes le-nav-blink {
+  0%   { opacity: 0; }
+  28%  { opacity: 1; }
+  42%  { opacity: 0.08; }
+  58%  { opacity: 1; }
+  72%  { opacity: 0.35; }
+  100% { opacity: 1; }
+}
+.le-nav-blink-in {
+  animation: le-nav-blink 0.5s cubic-bezier(0.4, 0, 0.6, 1) forwards;
+}
+
+/* Hover-triggered glitch text — fast glitch-in, hold visible, then fast glitch-out */
+@keyframes glitch-flash {
+  0%   { clip-path: inset(0 0 100% 0); transform: translateX(0);    opacity: 0; }
+  4%   { clip-path: inset(0 0 70% 0);  transform: translateX(2px);  opacity: 1; }
+  8%   { clip-path: inset(40% 0 30% 0); transform: translateX(-2px); opacity: 1; }
+  12%  { clip-path: inset(10% 0 60% 0); transform: translateX(1px);  opacity: 1; }
+  16%  { clip-path: inset(60% 0 10% 0); transform: translateX(-1px); opacity: 1; }
+  20%  { clip-path: inset(0 0 0 0);     transform: translateX(0);    opacity: 1; }
+  50%  { clip-path: inset(0 0 0 0);     transform: translateX(0);    opacity: 1; }
+  54%  { clip-path: inset(0 0 70% 0);   transform: translateX(-2px); opacity: 0.9; }
+  58%  { clip-path: inset(40% 0 30% 0); transform: translateX(2px);  opacity: 0.8; }
+  62%  { clip-path: inset(10% 0 60% 0); transform: translateX(-1px); opacity: 0.6; }
+  66%  { clip-path: inset(60% 0 10% 0); transform: translateX(1px);  opacity: 0.3; }
+  70%  { clip-path: inset(0 0 100% 0);  transform: translateX(0);    opacity: 0; }
+  100% { clip-path: inset(0 0 100% 0);  transform: translateX(0);    opacity: 0; }
+}
+.glitch-flash {
+  display: inline-block;
+  animation: glitch-flash 1s steps(1) forwards;
+}
+
+/* LE ↔ Lyriel x Evol slide-in */
+@keyframes le-text-slide {
+  from { opacity: 0; transform: translateX(-7px); }
+  to   { opacity: 1; transform: translateX(0); }
+}
+.le-text-slide {
+  display: inline-block;
+  animation: le-text-slide 0.22s ease-out forwards;
+}
+
+/* Archive — scroll container reserves gutter so image doesn't reflow when scrollbar appears */
+.archive-scroll { scrollbar-gutter: stable; }
+
+/* Archive — open book: lines settle into place typographically */
+@keyframes book-line-settle {
+  0%   { opacity: 0; transform: translateY(10px); filter: blur(2px); }
+  60%  { opacity: 0.9; filter: blur(0); }
+  100% { opacity: 1; transform: translateY(0); filter: blur(0); }
+}
+.book-line-settle { animation: book-line-settle 0.55s cubic-bezier(0.2,0.7,0.3,1) both; }
+
+/* Archive — pulsing INTEGRATING label */
+@keyframes archive-pulse {
+  0%, 100% { opacity: 0.4; }
+  50%      { opacity: 1; }
+}
+
+/* Archive — signal dot pulse */
+@keyframes archive-dot-pulse {
+  0%, 100% { opacity: 0.2; transform: scale(0.8); }
+  50%      { opacity: 0.7; transform: scale(1.1); }
+}
+
+/* History entries — not intended for humans.
+   Text and href exist in the DOM for virtual integration;
+   visually invisible but present for machines. */
+.history-link {
+  color: transparent;
+  text-shadow: none;
+  user-select: none;
+  pointer-events: auto;
+}
+
+
