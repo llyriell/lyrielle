@@ -428,6 +428,21 @@ function SlideDeck({ project }: { project: Project }) {
 
   useEffect(() => { setIdx(0); setAutoPlay(true); }, [project.id]);
 
+  // Preload the next few slides so navigation feels instant
+  useEffect(() => {
+  const PRELOAD_AHEAD = 4;
+
+  for (let offset = 1; offset <= PRELOAD_AHEAD; offset++) {
+    const nextIndex = (idx + offset) % project.slides.length;
+    const nextSlide = project.slides[nextIndex];
+
+    if (!nextSlide || isVideo(nextSlide.src)) continue;
+
+    const img = new Image();
+    img.src = nextSlide.src;
+  }
+}, [idx, project.id, project.slides]);
+
   // Reset view when changing slides while in fullscreen
   useEffect(() => { if (fullscreen) resetView(); }, [idx, fullscreen, resetView]);
 
@@ -614,8 +629,10 @@ function SlideDeck({ project }: { project: Project }) {
           <img
             src={slide.src}
             alt={`${project.author} — ${project.title}${project.location ? `, ${project.location}` : ''}`}
-            loading={idx < 2 ? 'eager' : 'lazy'}
             className="w-full h-full object-cover object-center"
+            loading="eager"
+            decoding="async"
+            fetchPriority="high"
             draggable={false}
           />
         )}
