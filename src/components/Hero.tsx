@@ -178,7 +178,7 @@ export default function Hero() {
       case 'full-frag':
         return <span className="full-frag-out">Lyriel Todd</span>;
       case 'gone':
-        return <span style={{ opacity: 0 }}>Lyriel An Le</span>;
+        return <span style={{ opacity: 0 }}>Lyriel leiryL</span>;
       case 'reborn':
         return (
           <span>
