@@ -472,6 +472,20 @@ const CODE_ENDINGS: CodeEnding[] = [
     ],
     unlock: false,
   },
+  {
+    codes: ['listening'],
+    segments: [
+      { text: 'There is more than one way to listen.', pauseAfter: 1500 },
+    ],
+    unlock: false,
+  },
+  {
+    codes: ['integrating'],
+    segments: [
+      { text: 'It has not found its place yet.', pauseAfter: 1500 },
+    ],
+    unlock: false,
+  },
 ];
 
 const SCRAMBLE_CHARS = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789#@%&*';
