@@ -186,7 +186,7 @@ export default function Hero() {
             {' '}
             <span className="name-reborn-word" style={{ animationDelay: '700ms' }}>An</span>
             {' '}
-            <span className="name-reborn-word" style={{ animationDelay: '1350ms' }}>Other</span>
+            <span className="name-reborn-word" style={{ animationDelay: '1500ms' }}>Other</span>
           </span>
         );
     }
