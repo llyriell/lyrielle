@@ -244,7 +244,7 @@ const PROJECTS: Project[] = [
       { src: '/images/etowah river/18 etowah.jpg', caption: 'A pavilion that is kept locked at all times.' },
       { src: '/images/etowah river/19 etowah.jpg', caption: 'A decorative pavilion. What is the point of a pavilion that is not for inhabitation?' },
       { src: '/images/etowah river/20 etowah.jpg', caption: 'Why are people forced to dump their waste here?' },
-      { src: '/images/etowah river/21 etowah.jpg', caption: 'The park\'s status as hunting lands helps to protect from some development.},
+      { src: '/images/etowah river/21 etowah.jpg', caption: 'The park\'s status as hunting lands helps to protect from some development.'},
       { src: '/images/etowah river/22 etowah.jpg', caption: 'This area rests in a flood plain.' },
       { src: '/images/etowah river/23 etowah.jpg', caption: 'In nature, it is fertile with nutrients and acts as a natural cleaner and collector of materials/debris.' },
       { src: '/images/etowah river/24 etowah.jpg', caption: 'This means that every time it rains and floods, this same natural healing mechanism pulls in human waste from the river and poisons itself.' },
