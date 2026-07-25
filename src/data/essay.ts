@@ -59,7 +59,7 @@ export const essayBlocks: EssayBlock[] = [
       'Externalization is a psychological technology: a way to study ourselves under the illusion that we are studying anything else.',
       'Projection is a defensive strategy: a way to deny the one who stands before us when their reality threatens our own.',
     ],
-    glitch: 'Who are you?',
+    glitch: 'Which is real?',
     spacer: true,
   },
   {
