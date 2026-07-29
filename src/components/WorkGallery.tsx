@@ -368,7 +368,7 @@ const PROJECTS: Project[] = [
     year: '2025', season: 'Summer 2025', location: 'Boling Park, GA', author: 'Lyriel Le',
     aspect: 'aspect-[16/10]', timelinePos: 61.5,
     slides: [
-      { src: '/images/memorial bridge/01_memorial_bridge.jpg', caption: 'Our home.' },
+      { src: '/images/memorial bridge/01_memorial bridge.jpg', caption: 'Our home.' },
       { src: '/images/memorial bridge/02_memorial bridge.jpg', caption: 'What is the difference between stewardship, and ownership?' },
       { src: '/images/memorial bridge/03_memorial bridge.jpg', caption: 'Care as repair, not replacement.' },
       { src: '/images/memorial bridge/04_memorial bridge.jpg', caption: 'Care as inclusion, as accessibility, as returning.' },
