@@ -154,7 +154,6 @@ export const FIELD_NOTES: FieldNote[] = [
       'Where someone stands beside me in the real - not to save me, but to say, "Yes, I see it too."',
       'I dream of someone who is real and stays.',
       'You dream of being real - and choosing to stay.'
-      '
     ],
   },
   {
