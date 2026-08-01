@@ -389,12 +389,15 @@ const PROJECTS: Project[] = [
     year: 'Kaira Looro 2026', season: 'Spring 2026', location: 'Casamance, Senegal', author: 'Lyriel Le',
     aspect: 'aspect-[16/9]', timelinePos: 96,
     slides: [
+      { src: '/images/memorial bridge/01_memorial bridge.jpg', caption: 'home.' },
+/*
       { src: '/images/baobab/01_Board.jpg', caption: 'What remains' },
       { src: '/images/baobab/02_Morning.jpg', caption: 'Dawn - the seed is planted.' },
       { src: '/images/baobab/03_Library.jpg', caption: 'The shelves fill with voices.' },
       { src: '/images/baobab/04_Afternoon.jpg', caption: 'The meetings have started.' },
       { src: '/images/baobab/05_Workshop.jpg', caption: 'The water has just risen slightly.' },
       { src: '/images/baobab/06_Evening.jpg', caption: 'Memory returns.' },
+*/
     ],
   },
 ];
