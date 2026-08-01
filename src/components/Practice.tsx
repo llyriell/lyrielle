@@ -74,8 +74,12 @@ const QUOTES: Quote[] = [
   },
 ];
 
+/*
 const GROWING = ['Pawpaws', 'Pink Lemons', 'Pomegranate Heart', 'Dogfennel'];
 const THINKING = ['Bridge Ecology', 'Living Systems', 'Native Woodland Restoration'];
+*/
+const GROWING = ['growing', 'groiwng', 'griowng', 'girowng'];
+const THINKING = ['thinking', 'tihnikng', 'ithinkng,];
 
 type Paper = { year: string; text: string; href: string; glitch?: boolean; history?: boolean };
 const PAPERS: Paper[] = [
