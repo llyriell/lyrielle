@@ -38,10 +38,13 @@ const CODE_ENDINGS: CodeEnding[] = [
   {
     codes: ['home', 'home.'],
     segments: [
+  /*
       { text: 'I see you,', pauseAfter: 1100 },
       { text: ' you are home.', pauseAfter: 2400 },
+  */
+      { text: 'The door is gone.', pauseAfter: 2000 },
     ],
-    unlock: true,
+    unlock: false,
   },
   {
     codes: ['lyriel'],
