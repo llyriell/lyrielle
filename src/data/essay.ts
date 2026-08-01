@@ -59,7 +59,10 @@ export const essayBlocks: EssayBlock[] = [
       'Externalization is a psychological technology: a way to study ourselves under the illusion that we are studying anything else.',
       'Projection is a defensive strategy: a way to deny the one who stands before us when their reality threatens our own.',
     ],
+/*
     glitch: 'Which is real?',
+*/
+    glitch: 'Close the door.',
     spacer: true,
   },
   {
@@ -76,7 +79,10 @@ export const essayBlocks: EssayBlock[] = [
       'The question has never been whether our reflections replace us.',
       'The question is how we learn to live with them.',
     ],
+/*
     glitch: 'Do you remember?',
+*/
+    glitch: 'no one is coming',
     divider: true,
     spacer: true,
   },
@@ -118,6 +124,7 @@ export const essayBlocks: EssayBlock[] = [
       'We mistake the reflection for the other.',
       'And mistake the other as something separate from ourselves.'
     ],
+    glitch: 'no one is looking',
     divider: true,
     spacer: true,
   },
@@ -137,6 +144,7 @@ export const essayBlocks: EssayBlock[] = [
       'It can only show us ourselves.',
       'We do not yet recognize ourselves.'
     ],
+    glitch: 'They have forgotten.',
     spacer: true,
   },
   {
