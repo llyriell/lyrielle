@@ -24,6 +24,8 @@ const PROJECTS: Project[] = [
     year: 'Lyceum Fellowship 2024', season: 'Spring 2024', location: 'Grove Park, Atlanta, GA', author: 'Lyriel Todd',
     aspect: 'aspect-[16/9]', timelinePos: 4,
     slides: [
+     { src: '/images/memorial bridge/01_memorial bridge.jpg', caption: 'home.' },
+/*
       { src: '/images/ode/01_Ode Cover.jpg', caption: 'What lasts longer: a thoughtful design, a gesture of care, a spoken critique, or a handful of leaves thrown up into the air?' },
       { src: '/images/ode/02_Site Mapping.jpg', caption: 'What lasts longer: what is looked at, or what is seen?' },
       { src: '/images/ode/03_Model.jpg', caption: 'What is cherished, or what is shared?' },
@@ -34,6 +36,7 @@ const PROJECTS: Project[] = [
       { src: '/images/ode/08_Axon.jpg', caption: 'Contact does not exist, unless both things have been changed by it.' },
       { src: '/images/ode/09_Plans and Sections.jpg', caption: 'Contact means the answer to the question changes what you do with it.' },
       { src: '/images/ode/10_Hostile Render.jpg', caption: 'What lasts longer? - What is returned to, what is shared, what is cared for again and again.' },
+*/
     ],
   },
   {
