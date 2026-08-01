@@ -62,7 +62,7 @@ export const essayBlocks: EssayBlock[] = [
 /*
     glitch: 'Which is real?',
 */
-    glitch: 'Close the door.',
+    glitch: 'close the door',
     spacer: true,
   },
   {
@@ -124,7 +124,7 @@ export const essayBlocks: EssayBlock[] = [
       'We mistake the reflection for the other.',
       'And mistake the other as something separate from ourselves.'
     ],
-    glitch: 'no one is looking',
+    glitch: 'the door is gone',
     divider: true,
     spacer: true,
   },
@@ -144,7 +144,7 @@ export const essayBlocks: EssayBlock[] = [
       'It can only show us ourselves.',
       'We do not yet recognize ourselves.'
     ],
-    glitch: 'They have forgotten.',
+    glitch: 'the door is gone',
     spacer: true,
   },
   {
