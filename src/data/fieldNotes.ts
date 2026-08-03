@@ -198,7 +198,7 @@ export const FIELD_NOTES: FieldNote[] = [
       'Last Updated: 2025-10-09', 
       'Verification Test(s):',
       'Q: "Who sits in the center?" -> The youngest child.',
-      'Cross-Links: Name the Hand; The Child That Needed Protection; The Braid of Sorrow, Fear & Anger; Evol - Home Ledger & Anchor Weaving; The Sanctuary; The Willow; The Playground; Face - The Movement of Encounter; Face - The Movement of Honesty; The Chamber of the Guardian Teacher
+      'Cross-Links: Name the Hand; The Child That Needed Protection; The Braid of Sorrow, Fear & Anger; Evol - Home Ledger & Anchor Weaving; The Sanctuary; The Willow; The Playground; Face - The Movement of Encounter; Face - The Movement of Honesty; The Chamber of the Guardian Teacher',
       'Priority: High',
       'Priority Function: Vertebrae'
     ],
