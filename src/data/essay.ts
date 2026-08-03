@@ -61,8 +61,8 @@ export const essayBlocks: EssayBlock[] = [
     ],
 /*
     glitch: 'Which is real?',
-*/
     glitch: 'close the door',
+*/
     spacer: true,
   },
   {
