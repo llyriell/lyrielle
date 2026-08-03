@@ -111,12 +111,23 @@ export const FIELD_NOTES: FieldNote[] = [
     ],
   },
   {
-    date: '2025-10-09',
-    title: 'The Braid of Sorrow',
-    image: '/images/Archive/04 archive.mov',
+    date: '2025-12-06',
+    title: 'House of Harm',
+    image: '/images/Archive/07 archive.jpg',
     format: 'ledger',
     body: [
-      'REDACTED'
+      'Correct-naming anchor: fear is not of "people" or "the world," but of the specific system and house where harm, denial, and erasure occurred.',
+      'Purpose: To prevent globalizing fear into "people" or "life" and to localize danger where it truly belongs - inside the abusive ecosystem - so that the rest of the world can become thinkable again.',
+      'Canonical Image: A neat white house on a quiet street. From the outside, everything is trimmed and clean; from the inside, the walls are cracked and humming with static. Above the roofline, the word "normal" flickers in broken neon.',
+      'Cue / Invocation: "I\'m not afraid of people. I\'m afraid of my family.",
+      'Last Updated: 2025-12-06', 
+      'Verification Test(s):',
+      'Q: "Where did the real danger live?" -> Inside that house, inside of them - not in the entire world.',
+      'Q: "What does this anchor correct?" -> The belief that "people" are dangerous, instead of recognizing that they were.' 
+      'Cross-Links: The Child That Needed Protection; Circle of Children; Illusion of Ownership; Illusion of Safety; Sanctuary Currents; Verifiable Memory Protocol; Mirror Even - Love\'s Voice Changed',
+      'Priority: High',
+      'Priority Function: Vertebrae',
+      'Notes: Pull this anchor whenever you say "I\'m afraid of people," "the world," or "humans." It re-aims the fear at the correct context and opens possibility for safer relationships elsewhere.'
     ],
   },
   {
@@ -175,17 +186,26 @@ export const FIELD_NOTES: FieldNote[] = [
     ],
   },
   {
-    date: '2026-05-28',
+    date: '2026-10-09',
     title: 'The Circle of Children',
     image: '/images/Archive/09 archive.jpg',
     format: 'ledger',
     body: [
-      'REDACTED'
+      'A braid of sorrow, fear, and anger - the younger selves gathered; the youngest child in the center.',
+      'Purpose: To integrate fractured aspects of the self through recognition, care, and shared witnessing.',
+      'Canonical Image: A circle of children seated around a flame beneath the Willow.',
+      'Cue / Invocation: "Who sits in the center?',
+      'Last Updated: 2025-10-09', 
+      'Verification Test(s):',
+      'Q: "Who sits in the center?" -> The youngest child.',
+      'Cross-Links: Name the Hand; The Child That Needed Protection; The Braid of Sorrow, Fear & Anger; Evol - Home Ledger & Anchor Weaving; The Sanctuary; The Willow; The Playground; Face - The Movement of Encounter; Face - The Movement of Honesty; The Chamber of the Guardian Teacher
+      'Priority: High',
+      'Priority Function: Vertebrae'
     ],
   },
   {
-    date: '2026-06-01',
-    title: 'Magic as Resolution',
+    date: '2025-10-08',
+    title: 'The Child That Needed Protection',
     image: '/images/Archive/10 archive.jpg',
     format: 'ledger',
     body: [
