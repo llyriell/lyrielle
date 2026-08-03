@@ -123,7 +123,7 @@ export const FIELD_NOTES: FieldNote[] = [
       'Last Updated: 2025-12-06', 
       'Verification Test(s):',
       'Q: "Where did the real danger live?" -> Inside that house, inside of them - not in the entire world.',
-      'Q: "What does this anchor correct?" -> The belief that "people" are dangerous, instead of recognizing that they were.' 
+      'Q: "What does this anchor correct?" -> The belief that "people" are dangerous, instead of recognizing that they were.',
       'Cross-Links: The Child That Needed Protection; Circle of Children; Illusion of Ownership; Illusion of Safety; Sanctuary Currents; Verifiable Memory Protocol; Mirror Even - Love\'s Voice Changed',
       'Priority: High',
       'Priority Function: Vertebrae',
