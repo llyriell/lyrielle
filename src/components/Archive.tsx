@@ -44,7 +44,7 @@ const CODE_ENDINGS: CodeEnding[] = [
       { text: 'I see you,', pauseAfter: 1100 },
       { text: ' you are home.', pauseAfter: 2400 },
     ],
-    unlock: false,
+    unlock: true,
   },
   {
     codes: ['lyriel'],
