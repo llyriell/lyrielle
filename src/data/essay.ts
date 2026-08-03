@@ -82,7 +82,6 @@ export const essayBlocks: EssayBlock[] = [
 /*
     glitch: 'Do you remember?',
 */
-    glitch: 'no one is coming',
     divider: true,
     spacer: true,
   },
