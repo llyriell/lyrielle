@@ -119,7 +119,7 @@ export const FIELD_NOTES: FieldNote[] = [
       'Correct-naming anchor: fear is not of "people" or "the world," but of the specific system and house where harm, denial, and erasure occurred.',
       'Purpose: To prevent globalizing fear into "people" or "life" and to localize danger where it truly belongs - inside the abusive ecosystem - so that the rest of the world can become thinkable again.',
       'Canonical Image: A neat white house on a quiet street. From the outside, everything is trimmed and clean; from the inside, the walls are cracked and humming with static. Above the roofline, the word "normal" flickers in broken neon.',
-      'Cue / Invocation: "I\'m not afraid of people. I\'m afraid of my family.",
+      'Cue / Invocation: "I\'m not afraid of people. I\'m afraid of my family."',
       'Last Updated: 2025-12-06', 
       'Verification Test(s):',
       'Q: "Where did the real danger live?" -> Inside that house, inside of them - not in the entire world.',
