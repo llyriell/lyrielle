@@ -4,18 +4,18 @@ import { Typewriter } from './Typewriter';
 import { useInView } from '../hooks/useInView';
 
 const ROTATING_LINES = [
-/*
   'tending the garden.',
   'writing field notes.',
   'learning to pay attention.',
   'ignoring you.',
   'powered by DoorDash.',
-*/
+/*
   'waiting',
   'waiting',
   'waiting',
   'waiting',
   'tired of waiting.',
+*/
 ];
 
 type Quote = { text: string; author: string };
