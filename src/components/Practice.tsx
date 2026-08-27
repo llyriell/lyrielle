@@ -78,7 +78,13 @@ const QUOTES: Quote[] = [
 const GROWING = ['growing', 'groiwng', 'griowng', 'girowng'];
 const THINKING = ['thinking', 'tihnikng', 'ithinkng'];
 */
-const GROWING = ['Pawpaws', 'Pink Lemons', 'Pomegranate Heart', 'Dogfennel'];
+type Growing = { text: string; href: string }
+const GROWING: Growing [] = [
+  { text: 'Pawpaws', href: 'https://site.extension.uga.edu/dekalb/2025/06/supporting-native-landscapes-with-americas-forgotten-fruit/' },
+  { text: 'Pomegranate Heart', href: '/images/pomheart.jpg' },
+  { text: 'Dogfennel', href: 'https://scnps.org/dogfennel-eupatorium-capillifolium-grand-strand-june-2024-plant-of-the-month/' },
+  { text: 'Tender Mends', href: 'https://www.depop.com/lyriel/' }
+
 const THINKING = ['Living Systems', 'Escape Trajectories', 'Native Woodland Restoration'];
 
 type Paper = { year: string; text: string; href: string; glitch?: boolean; history?: boolean };
