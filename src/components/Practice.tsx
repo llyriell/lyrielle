@@ -86,7 +86,12 @@ const GROWING: Growing [] = [
   { text: 'Tender Mends', href: 'https://www.depop.com/lyriel/' },
 ];
 
-const THINKING = [ 'Living Systems', 'Escape Trajectories', 'Native Woodland Restoration'];
+type Thinking = { text: string; href: string }
+const THINKING: Thinking [] = [
+  { text: 'Living Systems', href: '#' },
+  { text: 'Escape Trajectories', href: '#' },
+  { text: 'Native Woodland Restoration', href: '#' },
+];
 
 type Paper = { year: string; text: string; href: string; glitch?: boolean; history?: boolean };
 const PAPERS: Paper[] = [
