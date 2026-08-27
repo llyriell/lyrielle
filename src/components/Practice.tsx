@@ -137,7 +137,7 @@ function usePersistentInView(threshold = 0.2) {
   return [ref, inView] as const;
 }
 
-function HoverDropdown({ title, items }: { title: string; items: string[] }) {
+function HoverDropdown({ title, items }: { title: string; items: Growing[] }) {
   const [open, setOpen] = useState(false);
   const [isMobile] = useState(() => window.matchMedia('(max-width: 768px)').matches);
   const [ref, inView] = usePersistentInView(0.2);
@@ -148,7 +148,6 @@ function HoverDropdown({ title, items }: { title: string; items: string[] }) {
       setOpen(inView);
       return;
     }
-    // Desktop: close when scrolled away, but don't auto-reopen on scroll back
     if (!inView && wasInViewRef.current) {
       setOpen(false);
     }
@@ -156,25 +155,23 @@ function HoverDropdown({ title, items }: { title: string; items: string[] }) {
   }, [inView, isMobile]);
 
   return (
-    <div
-      ref={ref}
-      className="relative"
-      onMouseEnter={() => { if (!isMobile) setOpen(true); }}
-    >
+    <div ref={ref} className="relative" onMouseEnter={() => { if (!isMobile) setOpen(true); }}>
       <p className="text-[10px] tracking-[0.22em] uppercase text-[#AAAAAA] font-medium mb-1 cursor-default flex items-center gap-1.5">
-        {title}
-        <ChevronDown
-          size={9}
-          className="transition-transform duration-500 text-[#CCCCCC]"
-          style={{ transform: open ? 'rotate(180deg)' : 'rotate(0deg)' }}
-        />
+        {title} <ChevronDown size={9} className="transition-transform duration-500 text-[#CCCCCC]" style={{ transform: open ? 'rotate(180deg)' : 'rotate(0deg)' }} />
       </p>
       <div className="overflow-hidden transition-all duration-1000 ease-in-out" style={{ maxHeight: open ? '260px' : '0px', opacity: open ? 1 : 0 }}>
         <ul className="flex flex-col gap-2.5 pt-3">
           {items.map((item) => (
-            <li key={item} className="flex items-start gap-3">
+            <li key={item.text} className="flex items-start gap-3">
               <span className="text-[10px] mt-1 text-[#CCCCCC]">—</span>
-              <span className="text-[14px] font-[300] tracking-wide text-[#888888]">{item}</span>
+              <a 
+                href={item.href} 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="text-[14px] font-[300] tracking-wide text-[#888888] hover:text-botanical transition-colors"
+              >
+                {item.text}
+              </a>
             </li>
           ))}
         </ul>
