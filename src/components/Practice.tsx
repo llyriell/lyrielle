@@ -88,9 +88,9 @@ const GROWING: Growing [] = [
 
 type Thinking = { text: string; href: string }
 const THINKING: Thinking [] = [
-  { text: 'Living Systems', href: '#' },
-  { text: 'Escape Trajectories', href: '#' },
-  { text: 'Native Woodland Restoration', href: '#' },
+  { text: 'Living Systems' },
+  { text: 'Escape Trajectories' },
+  { text: 'Native Woodland Restoration' },
 ];
 
 type Paper = { year: string; text: string; href: string; glitch?: boolean; history?: boolean };
