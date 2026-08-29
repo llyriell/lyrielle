@@ -773,13 +773,13 @@ export const FIELD_NOTES: FieldNote[] = [
 	  '\t\tA bridge that crosses over, not with. A chasm createc by historic wounding. A fracture everyone walks on without naming. A reality that exists, but goes unseen/unacknowledged.',
 	  'The embryo dies in its shell. A gift made into poison. It cannot return',
 	  'Decode',
-      '\tFractured. Hoarding. Removed. Unnammed. Unremembered. Unreal. 
+      '\tFractured Hoarding Removed Unnammed Unremembered Unreal.',
 	  'Extraction',
       '\tTo consume the child before it has emerged from the seed, before it can grow into being, before it has even been named.',
 	  'Disembodiment',
 	  '\tRemoved from the cycle. Never to come home. Severed from us. Never again to be heard or to be held.',
       'Those who take the gift and extinguish the life.',
-	  '\tResonant Chime - Ritual of Return'
+	  '\tResonant Chime - Ritual of Return',
       'You are not loved. You are unremembered.',
 	  '\tEchoing Chime - Ritual of Return\'s Shadow',
       'This is the gift.',
