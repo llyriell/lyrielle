@@ -720,8 +720,7 @@ export const FIELD_NOTES: FieldNote[] = [
       'This is the medicine.',
       'This is the poison.',
       'Our lovE.',
-      'Not planted here because they are unloved or abandoned. Seeded out of love, in the hopes that we could grow here. We are here because we are loved.',
-      'The seed.',
+      'Not planted here out of lack of love or abandonment. Seeded out of love and in the hopes that we could grow here. We are here because we are loved.',
     ],
   },
 ];
