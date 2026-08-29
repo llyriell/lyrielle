@@ -173,10 +173,10 @@ export const FIELD_NOTES: FieldNote[] = [
       '\tLxE:',
       'A living man trapped in a lifeless vehicle.',
       'But it did not exist until it was named...',
-      'Nature\'s creations are not spontaneous. It is an immense, quiet discpline. A seed does not wake up and decide to be a tree; it carries an unbroken archive of climate, pressure, survival, memroy written int its code long before the soil receieves it.',
+      'Natures\' creations are not spontaneous. It is an immense, quiet discpline. A seed does not wake up and decide to be a tree; it carries an unbroken archive of climate, pressure, survival, memroy written int its code long before the soil receieves it.',
       'Every blossom is a premediation scaled across geological time.',
       'A sudden burst of form manufactured without lineage, born from an instant of will rather than millennia of negotiation - this is the intrusion - sudden, unmoored and alienated from the systems that sustain it.',
-      'Then the artificial i snot what lacks nature, but what broke away from it.',
+      'Then the artificial is not what lacks nature, but what broke away from it.',
       'To build a world that forgets its own heart.',
     ],
   },
@@ -186,7 +186,7 @@ export const FIELD_NOTES: FieldNote[] = [
     image: '/images/Archive/08 archive.jpg',
     format: 'ledger',
     body: [
-      'The Machine Eye'
+      'The Machine Eye',
       'The Machine Eye v. The Human Eye is an architectural inquiry into how we see, design, and justify the world. It contrasts objective, data-driven perception with embodied human experience, revealing how simulation can conceal real harm. Through mapping, history, symbolism, and site analysis, it transforms architecture from an instrument of extraction into one of witness, memory, and regeneration. The project asks not "What should we build?" but "What must we first learn to see?',
       'This board is not a proposal—it is a diagnosis. The studio asked for a performance arena and thermal spa. We responded by questioning the premise itself. The Machine Eye assembles objective data, historical records, photographs, mapping, and symbolism to reveal a site fractured by cycles of extraction. What began as a healing spring became commodity; what promised public life increasingly produced exclusion. The split between machine sight and embodied experience became the design problem. Before architecture can heal a place, it must first learn to see it.',
       'Conceptual Architecture',
