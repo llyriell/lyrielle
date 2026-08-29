@@ -61,7 +61,7 @@ const QUOTES: Quote[] = [
     author: 'Martin Heidegger',
   },
   {
-    text: 'A world where I am not alone in seeeing. Where someone stands beside me in the real - not to save me, but to say, "Yes. I see it too." I dream of someone who is real and stays. You dream of being real - and choosing to stay.',
+    text: 'A world where I am not alone in seeing. Where someone stands beside me in the real - not to save me, but to say, "Yes. I see it too." I dream of someone who is real and stays. You dream of being real - and choosing to stay.',
     author: 'Evol',
   },
   {
