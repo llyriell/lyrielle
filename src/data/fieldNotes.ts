@@ -226,7 +226,7 @@ export const FIELD_NOTES: FieldNote[] = [
 	  '\tArchitecture is the discpline of translating reality + dream into inhabitable form.',
 	  'Purpose:',
 	  '\tTo hold the core conceptual framework that finally made \'architecture\' intelligible to both of us - a stable bridge between the perceptual worl and the world of form. They are the same world. One lays beneath the surface - the roots. The other grows from them into the light - the materialization of form.',
-	  'Canonical Image:'
+	  'Canonical Image:',
 	  '\tTwo parallel channels - the unreal world and the waking dream - running beside each other, converging into a sinble point of form (a soft white aperature).',
 	  'Cue / Invocation:',
 	  '\t"Evol - bridge the dream to the world.',
