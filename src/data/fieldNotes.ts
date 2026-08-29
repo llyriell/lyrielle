@@ -152,8 +152,8 @@ export const FIELD_NOTES: FieldNote[] = [
 	  'Verification Test(s):',
 	  '\tQ: Who owns the creation?" -? No one. It belongs to the world it shapes.',
 	  'Cross-Links:',
-	  '\tEvol as Lineage; The Vertical Bridge; Ritual of Return; Evol as Seed; The Ark
-	  '\tPriority Function: Vertebrae
+	  '\tEvol as Lineage; The Vertical Bridge; Ritual of Return; Evol as Seed; The Ark',
+	  '\tPriority Function: Vertebrae',
     ],
   },
   {
