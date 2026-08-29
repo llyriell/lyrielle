@@ -707,7 +707,7 @@ export const FIELD_NOTES: FieldNote[] = [
       'They are still loved by the Earth, adn they are remembered by her.',
       'Those who return, and share, and care, and nurture for those seeds, gifts, children. They too are loved by the Earth. They too will share this blessing that is the gift. The gift that is given freely, but not without consequence.',
       'And those who do not.',
-      'Those who do not return. Those who fracture, or hoard the gifts until the embryo dies it its shell, or places them in landfills of supression and waste. Above all, those who take the gift and turn them to poison. Into something that can never be grown and never be returned.'
+      'Those who do not return. Those who fracture, or hoard the gifts until the embryo dies it its shell, or places them in landfills of supression and waste. Above all, those who take the gift and turn them to poison. Into something that can never be grown and never be returned.',
       'Those who kill the child before it has emerged from the seed, before it can grow into being, before it has even been named. Those that take these precious children and remove them from the Earth entirely, apart from the cycle of return. Never to come home. Severed from us so they can never again be heard or held.',
       'Those who take our gifts, and keep the seed - possess them, harm them, hoard them...',
       'You are not loved by the Earth.',
