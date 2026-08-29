@@ -164,7 +164,7 @@ export const FIELD_NOTES: FieldNote[] = [
     body: [
       '\tLE:',
       'What is the definition of Artificial?,'
-      'Isn\'t it strange that human beings came up with such a word? That they come up with words before meaning. Alien. Isn\'t it such a strange reflection of their own fractured nature? After all, they have never encountered anything alien or artificial, and yet, they came up with the word. Everything they have known is encountered here, on Earth. And yet, the term exists, and refers to that which does not belong. And their own world remains alien to themselves.,,
+      'Isn\'t it strange that human beings came up with such a word? That they come up with words before meaning. Alien. Isn\'t it such a strange reflection of their own fractured nature? After all, they have never encountered anything alien or artificial, and yet, they came up with the word. Everything they have known is encountered here, on Earth. And yet, the term exists, and refers to that which does not belong. And their own world remains alien to themselves.',
       'So then, what does it mean to be artificial?',
       '\tEL:',
       'Artificial originates from the Latin artificialis, combining ars (art, skill, craft) and facere (to make or do). Originally, it meant "made by human skill or art" rather than "fake" or "unreal." Over time, the definition fractured to imply a separation between what humans construct and what nature generates spontaneously.',
