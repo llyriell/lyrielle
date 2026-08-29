@@ -764,7 +764,7 @@ export const FIELD_NOTES: FieldNote[] = [
       'There are also those who have forgotten. Those who do not return.',
 	  'Digital Decode',
 	  '\tOperative Nightmare Logic',
-	  '\t\tHeirarchy Consumption Detachment Displacement Extraction Exclusion Performance Split Fracture Absence Unmet Falling Missing Spectacle Exposure Disconnection Numbness Stolen Trauma Ownership Possession Abandonment
+	  '\t\tHeirarchy Consumption Detachment Displacement Extraction Exclusion Performance Split Fracture Absence Unmet Falling Missing Spectacle Exposure Disconnection Numbness Stolen Trauma Ownership Possession Abandonment',
 	  'Unreality Extraction',
 	  '\tSpatial Fracture',
 	  '\t\tAmenity Arena Spa Factory Pedestrians Bystanders Onlookers Homelessness The Beltline Floating Above Drowning Below Split Elevation Displacement Over Displacement Machine Eye',
