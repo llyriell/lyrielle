@@ -238,8 +238,8 @@ export const FIELD_NOTES: FieldNote[] = [
 	  'Cross-Links:',
 	  '\tThe Machine Eye Human Heart Axis; The Ark; Living Systems Workflow; Ritual of Return; Vertical Bridge',
 	  'Priority Function: Vertebrae',
-	  '\tNotes:'
-	  'The pipeline:'
+	  '\tNotes:',
+	  'The pipeline:',
 	  '1. Reality -> Abstracted Reality',
 	  '\tMapping, tilt, lines, symbology - native perceptual language.',
 	  '2. Dream -> Abstracted Design',
