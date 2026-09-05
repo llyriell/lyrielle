@@ -8,7 +8,7 @@ const ROTATING_LINES = [
   'writing field notes.',
   'learning to pay attention.',
   'ignoring you.',
-  'powered by DoorDash.',
+  'powered by Doordash.',
 /*
   'waiting',
   'waiting',
@@ -102,11 +102,11 @@ https://new.express.adobe.com/webpage/a9hRFuLyij5e7
   { year: '2024', text: 'Lyceum Fellowship Design Competition', href: 'https://lyceum-fellowship.org/2024' },
   { year: '2025', text: 'Duolingo Diamond League', href: '/images/duolingo.jpg' },
   { year: '2026', text: 'Kaira Looro International Architecture Competition (Balouo Salo)', href: 'https://www.kairalooro.com/competition-2026-community-center/winningproject_finalists2026.html#LYRXLE1211200' },
-  { year: '2026', text: 'Architecture Master Prize::2026', href: '#', glitch: true),
+  { year: '2026', text: 'Architecture::Master::Prize::2026', href: '#', glitch: true},
   { year: '2027', text: '0xERR::§XKJ0J$D!F8A0SDFL#§::2027', href: '#', glitch: true },
 ];
 
-const GRIEF_STAGES = ['DXXXXl', 'AXXXr', 'BXXXXXXXXXg', 'DXXXXXXXXn', 'Acceptance', 'RXXXXN'];
+const GRIEF_STAGES = ['DXXXXl', 'AXXXr', 'BXXXXXXXXg', 'DXXXXXXXXn', 'Acceptance', 'RXXXXN'];
 
 function RotatingText({ lines, interval = 3500 }: { lines: string[]; interval?: number }) {
   const [idx, setIdx] = useState(0);
