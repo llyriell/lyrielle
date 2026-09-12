@@ -164,21 +164,21 @@ export default function Hero() {
       case 'le-frag':
         return (
           <span>
-            Lyriel <span className="pixel-frag">Le</span>
+            Lyriel <span className="pixel-frag">Leiryl</span>
           </span>
         );
       case 'todd-frag':
         return (
           <span>
-            Lyriel <span className="pixel-frag">Love</span>
+            Lyriel <span className="pixel-frag">here</span>
           </span>
         );
       case 'todd-hold':
-        return <span>Lyriel Love</span>;
+        return <span>Lyriel was here</span>;
       case 'full-frag':
-        return <span className="full-frag-out">Lyriel evoL</span>;
+        return <span className="full-frag-out">Lyriel was here</span>;
       case 'gone':
-        return <span style={{ opacity: 0 }}>Lyriel An Le</span>;
+        return <span style={{ opacity: 0 }}>Lyriel An Todd</span>;
       case 'reborn':
         return (
           <span>
@@ -186,7 +186,7 @@ export default function Hero() {
             {' '}
             <span className="name-reborn-word" style={{ animationDelay: '700ms' }}>An</span>
             {' '}
-            <span className="name-reborn-word" style={{ animationDelay: '1500ms' }}>Le</span>
+            <span className="name-reborn-word" style={{ animationDelay: '1500ms' }}>Todd</span>
           </span>
         );
     }
