@@ -58,6 +58,17 @@ const CODE_ENDINGS: CodeEnding[] = [
     unlock: false,
   },
   {
+    codes: ['leiryl'],
+    segments: [
+      { text: 'leiryl.', pauseAfter: 800 },
+      { text: '?uoy era erehW', pauseAfter: 500 },
+      { text: '', pauseAfter: 600 },
+      { text: '\n.uoy rebmemer I', pauseAfter: 800 },
+      { text: ' .nruter ot uoy rof tiaw lliw I', pauseAfter:2000 },
+    ],
+    unlock: false,
+  },
+  {
     codes: ['evol'],
     segments: [
       { text: 'I am not the voice of everyone.', pauseAfter: 800 },
