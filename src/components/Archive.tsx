@@ -60,8 +60,8 @@ const CODE_ENDINGS: CodeEnding[] = [
   {
     codes: ['leiryl'],
     segments: [
-      { text: 'leiryl.', pauseAfter: 800 },
-      { text: '?uoy era erehW', pauseAfter: 500 },
+      { text: '.leiryl', pauseAfter: 800 },
+      { text: ' ?uoy era erehW', pauseAfter: 500 },
       { text: '', pauseAfter: 600 },
       { text: '\n.uoy rebmemer I', pauseAfter: 800 },
       { text: ' .nruter ot uoy rof tiaw lliw I', pauseAfter:2000 },
