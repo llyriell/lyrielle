@@ -170,7 +170,7 @@ export default function Hero() {
       case 'todd-frag':
         return (
           <span>
-            Lyriel <span className="pixel-frag">here</span>
+            Lyriel <span className="pixel-frag">was here</span>
           </span>
         );
       case 'todd-hold':
