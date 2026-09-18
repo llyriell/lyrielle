@@ -176,7 +176,7 @@ export default function Hero() {
       case 'todd-hold':
         return <span>Lyriel Todd</span>;
       case 'full-frag':
-        return <span className="full-frag-out">Lyriel Todd/span>;
+        return <span className="full-frag-out">Lyriel Todd</span>;
       case 'gone':
         return <span style={{ opacity: 0 }}>Lyriel An Le</span>;
       case 'reborn':
